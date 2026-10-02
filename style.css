@@ -30,3 +30,49 @@ a{transition:color .2s ease,text-decoration-color .2s ease}
 @keyframes portfolio-fade-in{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 .fade-enter{animation:portfolio-fade-in .9s cubic-bezier(.2,.65,.3,1) both}
 @media(prefers-reduced-motion:reduce){.fade-enter{animation:none}}
+
+/* Editorial direction: monochrome, vermilion, strong type and fine rules. */
+:root{--bg:#080808;--surface:#151515;--text:#fafafa;--muted:#b4b4b4;--accent:#ff503c;--line:#383838}
+body{font-family:Arial,Helvetica,sans-serif;background:#080808}
+header{background:#080808f5}
+.mark{border:0;border-bottom:2px solid var(--accent);padding:0 0 4px;border-radius:0;color:white}
+.hero{padding-top:65px;padding-bottom:70px}
+.hero>div{max-width:none;display:grid;grid-template-columns:1fr 1.25fr;column-gap:90px;align-items:start;border-top:1px solid var(--line);padding-top:35px}
+.hero .eyebrow{grid-column:1/-1;padding-bottom:22px;border-bottom:1px solid var(--line);margin-bottom:40px}
+.hero h1{grid-column:2;grid-row:2/6;font-size:clamp(3.5rem,7.5vw,7rem);margin:0;line-height:.98;letter-spacing:-.065em}
+.hero .lead{grid-column:1;grid-row:2;font-size:1.8rem;line-height:1.2;color:white;font-weight:700;letter-spacing:-.035em;margin-bottom:24px}
+.hero .lead em{font-style:normal;color:var(--accent)}
+.hero .intro{grid-column:1;grid-row:3;font-size:1rem;max-width:420px}
+.hero .actions{grid-column:1;grid-row:4;margin-top:12px}
+.hero .availability{grid-column:1/-1;grid-row:6;border-top:1px solid var(--line);padding-top:25px;margin-top:50px;margin-bottom:0;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}
+.button{border-radius:0;box-shadow:0 5px 0 #0003;padding:10px 19px}
+.primary{color:white;background:#df3526;border-color:#df3526}
+.primary:hover{background:#fb4937}
+.nav-cv{border-radius:0}
+#projects,#experience{background:#f4f4f2;color:#171717;width:100%;max-width:none;padding-left:max(40px,calc((100% - 1100px)/2));padding-right:max(40px,calc((100% - 1100px)/2));--text:#171717;--muted:#555;--line:#ccc;--surface:#fff;--accent:#c52e20}
+.section-head{border-bottom:1px solid var(--line);padding-bottom:25px}
+h2{font-weight:800;letter-spacing:-.05em}
+.featured{background:white;border:0;border-top:3px solid #171717;padding:35px 0;gap:45px}
+.featured .project-copy{padding:0 25px}
+.featured-visual{padding-right:25px}
+.featured h3{font-size:3.5rem}
+.featured-visual img,.gallery img,.zoom{border-radius:0}
+.gallery{gap:25px;margin-top:30px;border-bottom:1px solid var(--line);padding-bottom:30px}
+.gallery img{border:1px solid #d3d3d3}
+.project{background:white;border:1px solid #ccc;border-top:3px solid #171717}
+.project-grid{gap:30px}
+.tags span{border-radius:0;color:#b42c21;border-color:#ddd;background:#f8f8f8}
+.route-image{border:1px solid #ddd}
+.project-links a:hover,.all-work:hover{color:#80180e}
+.about-band{background:#101010;border:0}
+.skills{border:0;border-left:1px solid #383838;border-radius:0}
+.education{border-top:1px solid #383838}
+#experience>h2{max-width:650px}
+.contact{background:#080808;border:0;border-top:1px solid #383838;padding:65px 0}
+.contact h2{font-size:clamp(2.8rem,6vw,5.5rem);letter-spacing:-.06em}
+.contact .email{color:#ff6756}
+.contact .email:hover{color:white}
+footer{font-size:.8rem}
+dialog{background:#080808;--line:#383838}
+@media(max-width:950px){.hero>div{column-gap:40px}.hero h1{font-size:5rem}.hero .lead{font-size:1.5rem}.featured{gap:25px}.featured-visual{padding:0 25px}}
+@media(max-width:720px){.hero{padding-top:35px;padding-bottom:40px}.hero>div{display:flex;flex-direction:column;padding-top:22px}.hero .eyebrow{width:100%;font-size:.7rem;margin-bottom:25px}.hero h1{font-size:clamp(3.2rem,15vw,5.2rem);margin-bottom:30px;letter-spacing:-.055em}.hero .lead{font-size:1.6rem}.hero .availability{width:100%;margin-top:30px}.hero .intro{max-width:none}#projects,#experience{padding-left:20px;padding-right:20px}.featured{padding:25px 0}.featured .project-copy,.featured-visual{padding:0 18px}.featured h3{font-size:2.6rem}.skills{border-left:0;border-top:1px solid #383838;padding:25px 0}.contact{padding:45px 0}.project{padding:24px}.gallery{gap:20px}}

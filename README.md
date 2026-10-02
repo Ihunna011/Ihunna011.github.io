@@ -32,3 +32,7 @@ The current PDF is the CV you supplied, unchanged. Its Lumina description predat
 Lumina is presented as an ongoing, AI-assisted personal project with a private repository. No private source code is included. Screenshots document the supplied prototype, rather than a public live application.
 
 The site works without JavaScript: navigation remains visible and screenshot links open the full images. With JavaScript, mobile navigation collapses, screenshots open in a keyboard-accessible modal, and offscreen sections fade into view. Reduced-motion preferences disable the animations. Buttons and links include hover and keyboard-focus feedback.
+
+## Design
+
+Editorial black-and-white layout with red accents, a personal introduction, thin rules and lighter project sections. Scroll fades, hover feedback and mobile navigation are preserved.
